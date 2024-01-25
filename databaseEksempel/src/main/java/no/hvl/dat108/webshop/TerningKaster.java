@@ -9,7 +9,7 @@ public class TerningKaster {
 	}
 	public int kastTerning(){
 		Random random = new Random();
-		this.terningkast=1 + random.nextInt(5);
+		this.terningkast=1 + random.nextInt(6);
 		return this.terningkast;
 	}
 }
