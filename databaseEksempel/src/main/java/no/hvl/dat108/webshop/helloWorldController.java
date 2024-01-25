@@ -70,5 +70,6 @@ public class helloWorldController {
 		return "deltagerlite";
 	}
 
-	
+//hei fra ibrahiuhsiHWDIP
+
 }
