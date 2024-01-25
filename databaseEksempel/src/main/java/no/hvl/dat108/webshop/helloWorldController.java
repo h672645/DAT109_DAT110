@@ -23,12 +23,12 @@ public class helloWorldController {
 		return "Hello world";
 	}
 	
-	@GetMapping("/")
-	public String helloWorld2(Model model
-			) {
-		
-		return "stigespill";
-	}
+//	@GetMapping("/")
+//	public String helloWorld2(Model model
+//			) {
+//		
+//		return "stigespill";
+//	}
 	
 	@GetMapping("/")
 	public String liste(Model model) {

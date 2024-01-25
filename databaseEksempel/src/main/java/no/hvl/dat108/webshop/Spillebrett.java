@@ -7,6 +7,8 @@ import java.util.Random;
 
 public class Spillebrett {
 
+	private List<Rute> ruteliste;
+	
 	
 	
 }
