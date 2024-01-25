@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import jakarta.servlet.http.HttpSession;
+import jakarta.websocket.Session;
+
 @Controller
 public class helloWorldController {
 
@@ -21,20 +24,50 @@ public class helloWorldController {
 	}
 	
 	@GetMapping("/")
-	public String helloWorld2(Model model) {
+	public String helloWorld2(Model model
+			) {
+		
 		return "stigespill";
 	}
 	
-	@GetMapping("/liste")
+	@GetMapping("/")
 	public String liste(Model model) {
-	    List<Integer> liste = new ArrayList<>();
+	    
+		List<Integer> liste = new ArrayList<>();
 	    for(int i = 1; i <= 100; i++) {
 	        liste.add(i);
 	    }
 	    
+	    
+	    int i = 1;
+	    while(i < 20) {
+	    	for(int k : liste) {
+		    	
+		    	//Spilltrekk();  ->     TrillerTerning() -> FlytterBRik
+		    	
+		    }
+	    	i++;
+	    }
+	    
+	    
+	    
+	    
+	    
+	    
 	    model.addAttribute("ruteliste", liste);
 	    
+	    
+	    
 	    return "deltagerliste";
+	}
+	
+	@PostMapping("/SpillTrekk")
+	public String spillTrekk(Model model
+			) {
+		
+		
+		
+		return "deltagerlite";
 	}
 
 	
