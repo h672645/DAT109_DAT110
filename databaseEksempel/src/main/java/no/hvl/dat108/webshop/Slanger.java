@@ -2,19 +2,19 @@ package no.hvl.dat108.webshop;
 
 public class Slanger {
 
-    private int lengden;
+    private int lengde;
     //oprette objekt
     public Slanger(){
-        this.lengden=0;
+        this.lengde=0;
     }
-//get
-    public int getLengden(){
-        return lengden;
+    //get
+    public int getLengde(){
+        return lengde;
     }
-//set
-public void setLengden(int lengden){
-    this.lengden=lengden;
-}
+    //set
+    public void setLengde(int lengde){
+    this.lengde=lengde;
+    }
 
 
 }
