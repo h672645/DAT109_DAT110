@@ -6,7 +6,10 @@ public class Spiller {
 	
 	private String navn;
 	private int rutelokasjon;
+
 	private TerningKaster terning;
+
+	private TerningKaster terningKaster;
 	
 	public void Spilltrekk() {
 		//TODO.....

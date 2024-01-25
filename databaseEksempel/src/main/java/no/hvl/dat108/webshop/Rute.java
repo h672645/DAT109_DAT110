@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Rute {
-<<<<<<< Updated upstream
-	//tttt
-	//hehe
-=======
 	
 	private int nummer;
 	private int verdi;
@@ -36,5 +32,5 @@ public class Rute {
 		this.verdi = verdi;
 	}
 	
->>>>>>> Stashed changes
+	
 }

@@ -33,32 +33,16 @@ public class helloWorldController {
 	@GetMapping("/")
 	public String liste(Model model) {
 	    
-		List<Integer> liste = new ArrayList<>();
+		List<Rute> liste = new ArrayList<>();
 	    for(int i = 1; i <= 100; i++) {
-	        liste.add(i);
+	        liste.add(new Rute(i,0));
 	    }
-	    
-	    
-	    int i = 1;
-	    while(i < 20) {
-	    	for(int k : liste) {
-		    	
-		    	//Spilltrekk();  ->     TrillerTerning() -> FlytterBRik
-		    	
-		    }
-	    	i++;
-	    }
-	    
-	    
-	    
-	    
-	    
 	    
 	    model.addAttribute("ruteliste", liste);
 	    
 	    
 	    
-	    return "deltagerliste";
+	    return "testbrett";
 	}
 	
 	@PostMapping("/SpillTrekk")
