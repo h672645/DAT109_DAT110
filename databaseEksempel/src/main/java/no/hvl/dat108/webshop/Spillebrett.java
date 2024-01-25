@@ -37,12 +37,34 @@ public class Spillebrett {
 			ruteliste.get(35).getStiger().setLengde(77);
 			ruteliste.get(10).getStiger().setLengde(26);
 			ruteliste.get(66).getStiger().setLengde(99);
-			
-
-
-
 		}
 
+		public List<Rute> getRute(){
+			return ruteliste;
+		}
+
+		/**
+		 * metode finner den ny brikke som skal flyttes til..
+		 * rute er hvor spilleren står..
+		 * verdi er verdien av terning,antall ruter som brikken skal flyttes.
+		 * return ny ruten.
+		 */
+		
+		 public Rute soekRute(Rute rute, Integer verdien){
+
+			//usikker på loggikken her det kan sikkert bedre å diskutere!!
+			int ruteVerdi=rute.getRutenummer()+verdien ;
+				Rute nyRute=ruteliste.get(ruteVerdi);
+					if (nyRute.getSlange().getLengde()>0){
+
+					nyRute=ruteliste.get(ruteVerdi - ruteliste.get(ruteVerdi).getSlange().getLengde());
+						System.out.println(" *** Du har landet på en slange ** !!");
+
+					} else {
+				System.out.println("**** Du har landet på en Stige ****!!!");
+			}
+				return nyRute;
+		 }
 
 	}//klasse
 	
