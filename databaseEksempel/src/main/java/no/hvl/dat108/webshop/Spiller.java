@@ -9,11 +9,11 @@ public class Spiller {
 
 	private TerningKaster terning;
 
-	private TerningKaster terningKaster;
+	private TerningKaster terningKaster= new TerningKaster();
 	
 	public void Spilltrekk() {
 		terningKaster.kastTerning();
-		if(terning.getAntSeksere()>=3) {
+		if(terningKaster.getAntSeksere()>=3) {
 			if(terningKaster.getTerningKast()==6) {
 				terningKaster.restetAntSeksere();
 				this.setRutelokasjon(this.getRutelokasjon()+terningKaster.getTerningKast());
@@ -40,6 +40,9 @@ public class Spiller {
 
 	public int getRutelokasjon() {
 		return rutelokasjon;
+	}
+	public TerningKaster getTerningen() {
+		return this.terningKaster;
 	}
 
 	public void setRutelokasjon(int rutelokasjon) {
