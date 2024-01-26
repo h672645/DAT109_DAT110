@@ -14,6 +14,7 @@ public class Spiller {
 	public void Spilltrekk() {
 		terningKaster.kastTerning();
 		if(terningKaster.getAntSeksere()>=3) {
+			this.setRutelokasjon(1);
 			if(terningKaster.getTerningKast()==6) {
 				terningKaster.restetAntSeksere();
 				this.setRutelokasjon(this.getRutelokasjon()+terningKaster.getTerningKast());
@@ -21,6 +22,7 @@ public class Spiller {
 		}
 		else {
 			this.setRutelokasjon(this.getRutelokasjon()+terningKaster.getTerningKast());
+			terningKaster.restetAntSeksere();
 		}
 		//TODO.....
 	}
