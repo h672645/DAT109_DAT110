@@ -35,7 +35,7 @@ public class helloWorldController {
 	    
 		List<Rute> liste = new ArrayList<>();
 	    for(int i = 1; i <= 100; i++) {
-	        liste.add(new Rute(i,0));
+	        liste.add(new Rute(i));
 	    }
 	    
 	    model.addAttribute("ruteliste", liste);
