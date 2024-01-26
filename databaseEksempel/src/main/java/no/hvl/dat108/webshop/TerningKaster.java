@@ -20,4 +20,10 @@ public class TerningKaster {
 	public int getAntSeksere() {
 		return this.sekserePaaRad;
 	}
+	public void restetAntSeksere() {
+		sekserePaaRad=0;
+	}
+	public int getTerningKast() {
+		return this.terningkast;
+	}
 }
