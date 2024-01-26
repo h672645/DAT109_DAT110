@@ -22,7 +22,9 @@ public class Spiller {
 		}
 		else {
 			this.setRutelokasjon(this.getRutelokasjon()+terningKaster.getTerningKast());
-			terningKaster.restetAntSeksere();
+			if(terningKaster.getTerningKast()!=6) {
+				terningKaster.restetAntSeksere();
+			}
 		}
 		//TODO.....
 	}
