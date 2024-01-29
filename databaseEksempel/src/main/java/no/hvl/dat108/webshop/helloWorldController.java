@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +18,7 @@ import jakarta.websocket.Session;
 
 @Controller
 public class helloWorldController {
+@Autowired private static  RuteService sr;
 
 	@GetMapping("/hello")
 	@ResponseBody
@@ -26,7 +28,7 @@ public class helloWorldController {
 	
 	@GetMapping("/")
 	public String liste(Model model) {
-	    
+	   /* 
 		List<Rute> liste = new ArrayList<>();
 	    for(int i = 1; i <= 100; i++) {
 	        
@@ -44,7 +46,10 @@ public class helloWorldController {
 	    	liste.add(rute);
 	        
 	    }
-	    
+	     */
+
+		 List<Rute> liste=sr.rutelist();
+
 	    model.addAttribute("ruteliste", liste);
 	    
 	    return "testbrett";
