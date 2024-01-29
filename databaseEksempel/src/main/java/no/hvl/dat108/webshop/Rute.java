@@ -5,8 +5,10 @@ import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "Rute", schema = "Dat109")
 public class Rute {
 
 	@Id

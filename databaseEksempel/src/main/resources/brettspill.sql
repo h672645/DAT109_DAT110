@@ -6,13 +6,12 @@ SET search_path TO DAT109;
 DROP TABLE IF EXISTS Rute;
 
 CREATE TABLE Rute(
-	nummer INTEGER PRIMARY KEY,
+	rutenummer INTEGER PRIMARY KEY,
 	verdi INTEGER 
 );
 
-INSERT INTO Rute (nummer, verdi)
+INSERT INTO Rute (rutenummer, verdi)
 VALUES
-(0,9),
 (1,0),
 (2,0),
 (3,0),

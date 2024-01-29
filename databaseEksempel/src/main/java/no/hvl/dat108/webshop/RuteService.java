@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class RuteService {
 
-    @Autowired  private static RuteRepo ruterepo;
+    @Autowired  private RuteRepo ruterepo;
      
     public List<Rute> rutelist() {
         return ruterepo.findAll();

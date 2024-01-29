@@ -20,7 +20,8 @@ import jakarta.websocket.Session;
 
 @Controller
 public class helloWorldController {
-@Autowired private static  RuteService sr;
+	
+	@Autowired private RuteService sr;
 
 	@GetMapping("/hello")
 	@ResponseBody
@@ -30,27 +31,8 @@ public class helloWorldController {
 	
 	@GetMapping("/")
 	public String liste(Model model) {
-	   /* 
-		List<Rute> liste = new ArrayList<>();
-	    for(int i = 1; i <= 100; i++) {
-	        
-	    	Rute rute = new Rute(i);
-	    	
-	    	Random random = new Random();
-	    	if(i % 15 == 0) {
-	    		rute.setVerdi(random.nextInt(5,10));
-	    	} else if(i % 13 == 0) {
-	    		rute.setVerdi(random.nextInt(-10,-5));
-	    	} else {
-	    		
-	    	}
-	    	
-	    	liste.add(rute);
-	        
-	    }
-	     */
-
-		 List<Rute> liste=sr.rutelist();
+	   
+		List<Rute> liste = sr.rutelist();
 
 	    model.addAttribute("ruteliste", liste);
 	    
@@ -65,7 +47,5 @@ public class helloWorldController {
 		spillerene.add(spiller1);
 		return "testbrett";
 	}
-
-//hei fra ibrahiuhsiHWDIP
 
 }
