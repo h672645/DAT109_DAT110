@@ -3,6 +3,7 @@ package no.hvl.dat108.webshop;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -56,12 +58,12 @@ public class helloWorldController {
 	}
 	
 	@PostMapping("/SpillTrekk")
-	public String spillTrekk(Model model
-			) {
-		
-		
-		
-		return "deltagerlite";
+	public String spillTrekk(Model model, @RequestParam Queue<Spiller> spillerene) {
+		Spiller spiller1 = spillerene.remove();
+		spiller1.Spilltrekk();
+		model.addAttribute(spiller1);
+		spillerene.add(spiller1);
+		return "testbrett";
 	}
 
 //hei fra ibrahiuhsiHWDIP
