@@ -9,12 +9,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class RuteService {
 
-    @Autowired  private  static RuteRepo ruterepo;
+    @Autowired  private static RuteRepo ruterepo;
      
     public List<Rute> rutelist() {
         return ruterepo.findAll();
     }
-    public Rute finnRutbyNummer(int nummer){
-        return ruterepo.findbyRutenummer(nummer);
+    public Rute finnRutbyNummer(Integer nummer){
+        return ruterepo.findByRutenummer(nummer);
     }
 }

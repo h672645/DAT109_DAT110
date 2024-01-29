@@ -6,8 +6,8 @@ SET search_path TO DAT109;
 DROP TABLE IF EXISTS Rute;
 
 CREATE TABLE Rute(
-	nummer INT PRIMARY KEY,
-	verdi INT 
+	nummer INTEGER PRIMARY KEY,
+	verdi INTEGER 
 );
 
 INSERT INTO Rute (nummer, verdi)

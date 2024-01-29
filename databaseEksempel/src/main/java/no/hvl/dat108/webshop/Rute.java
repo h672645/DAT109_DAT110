@@ -3,54 +3,38 @@ package no.hvl.dat108.webshop;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Rute {
-	//tror dere at det er bedre å la Ruten inneholde både stige,slange og rutenummer ??
-	private Stiger stige;
-	private Slanger slange;
-	private Integer rutenummer;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-	private int verdi;
+@Entity
+public class Rute {
+
+	@Id
+	private Integer rutenummer;
+	private Integer verdi;
 	
 	public Rute() {
 	}
 	
-	public Rute(int x) {
-		this.rutenummer= x;
-		this.slange= new Slanger();
-		this.stige= new Stiger();
+	public Rute(Integer rutenummer) {
+		this.rutenummer = rutenummer;
 		this.verdi = 0;
 	}
-	// getter
+	
 	public Integer getRutenummer(){
 		return rutenummer;
 	}
 
-	public Slanger getSlange(){
-		return this.slange;
-	}
-	public Stiger getStiger (){
-		return this.stige;
-	}
-
-	//Setter
-	public void setRutenummer(int rutenummer){
+	public void setRutenummer(Integer rutenummer){
 		this.rutenummer=rutenummer;
 	}
 
-	public void setSlanger(Slanger slange){
-		slange=this.slange;
-	}
-	public void setStige(Stiger stige ){
-		stige =this.stige;
-	}
-
-	public int getVerdi() {
+	public Integer getVerdi() {
 		return verdi;
 	}
 
-	public void setVerdi(int verdi) {
+	public void setVerdi(Integer verdi) {
 		this.verdi = verdi;
 	}
-	
 	
 }
