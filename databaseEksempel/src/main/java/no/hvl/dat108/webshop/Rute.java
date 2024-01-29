@@ -9,7 +9,7 @@ public class Rute {
 	private Slanger slange;
 	private Integer rutenummer;
 
-	//private Integer verdi;
+	private int verdi;
 	
 	public Rute() {
 	}
@@ -18,6 +18,7 @@ public class Rute {
 		this.rutenummer= x;
 		this.slange= new Slanger();
 		this.stige= new Stiger();
+		this.verdi = 0;
 	}
 	// getter
 	public Integer getRutenummer(){
@@ -43,29 +44,6 @@ public class Rute {
 		stige =this.stige;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-	public int getNummer() {
-		return nummer;
-	}
-
-	public void setNummer(int nummer) {
-		this.nummer = nummer;
-	}
-
 	public int getVerdi() {
 		return verdi;
 	}
@@ -73,6 +51,6 @@ public class Rute {
 	public void setVerdi(int verdi) {
 		this.verdi = verdi;
 	}
-	*/
+	
 	
 }
