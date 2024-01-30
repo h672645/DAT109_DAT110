@@ -52,10 +52,11 @@
         <%-- For simplicity, the cells are manually created here --%>
         <%-- Add classes like player1 or player2 to represent different states on the board --%>
         <c:forEach var="rute" items="${ruteliste}">
-        	<div style="color:${rute.verdi < 0 ? 'red' : '' || rute.verdi > 0 ? 'green' : ''}" class="cell">${rute.rutenummer}</div>
+        	<div style="color:${rute.verdi < 0 ? 'red' : '' || rute.verdi > 0 ? 'green' : ''}" class="cell">${rute.rutenummer} (${spille1.nummer})</div>
         </c:forEach>
         <%-- Repeat the above cell div for the total number of cells (100 in this case) --%>
         <%-- You can use a loop or other methods to generate these cells dynamically --%>
+        <form></form>
     </div>
 </body>
 </html>

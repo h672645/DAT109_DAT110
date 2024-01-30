@@ -40,13 +40,13 @@ public class helloWorldController {
 	    return "testbrett";
 	}
 	
-	@PostMapping("/")
+	@PostMapping("/spilltrekk")
 	public String spillTrekk(Model model, @RequestParam Queue<Spiller> ruteliste) {
 		Spiller spiller1 = ruteliste.remove();
 		spiller1.Spilltrekk();
 		model.addAttribute(spiller1);
 		ruteliste.add(spiller1);
-		return "testbrett";
+		return "redirect:testbrett";
 	}
 
 }
