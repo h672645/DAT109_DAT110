@@ -54,11 +54,19 @@
     	
         <c:if test="${fn:length(spillerliste) >= 2}">
         <c:forEach var="rute" items="${ruteliste}">
-        	<div style="color:${rute.verdi < 0 ? 'red' : '' || rute.verdi > 0 ? 'green' : ''}" class="cell">
-        		<div>
-        			<c:out value="${rute.rutenummer}"></c:out>
-        		</div>
+        	<div class="cell" style="color:${rute.verdi < 0 ? 'red' : '' || rute.verdi > 0 ? 'green' : ''}" >
+        		<c:out value="${rute.rutenummer}"></c:out>
+        		
+        		<c:if test="${rute.rutenummer == 1 || rute.rutenummer == 100}">
+        			<br>${rute.rutenummer == 1 ? 'Start':'Mål'}
+        		</c:if>
+        		<c:forEach var="spiller" items="${spillerliste}">
+        		<c:if test="${spiller.rutelokasjon == rute.rutenummer}">
+        			<br>${spiller.navn}
+        		</c:if>
+        	</c:forEach>
         	</div>
+        	
         </c:forEach>
         </c:if>
         <%-- Repeat the above cell div for the total number of cells (100 in this case) --%>
@@ -90,12 +98,12 @@
     	</div>
     
     	<div class="spiller">Hvem sin tur:
-    		<form:form method="post">
+    		<form:form method="post" action="spillTrekk">
             	<fieldset>
             		<c:if test="${not empty hvemSinTur}">
             			<p style="color:blue">Det er ${hvemSinTur} sin tur:</p>
             		</c:if>
-                	<button type="button" onclick="spillTrekk(${spillerliste})">Spill trekk</button>
+                	<button type="submit">Spill trekk</button>
             	</fieldset>
         	</form:form>
     	</div>

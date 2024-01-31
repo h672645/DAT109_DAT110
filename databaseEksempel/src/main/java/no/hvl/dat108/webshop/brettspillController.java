@@ -22,17 +22,11 @@ import jakarta.servlet.http.HttpSession;
 import jakarta.websocket.Session;
 
 @Controller
-public class helloWorldController {
+public class brettspillController {
 	
 	@Autowired private RuteService sr;
 	private static List<Spiller> spillerliste = new ArrayList<Spiller>();
 	private static Queue<Spiller> spillerkoe = new LinkedList<Spiller>();
-
-	@GetMapping("/hello")
-	@ResponseBody
-	public String helloWorld() {
-		return "Hello world";
-	}
 	
 	@GetMapping("/")
 	public String foersteBesoek(Model model,
@@ -40,15 +34,23 @@ public class helloWorldController {
 			) {
 	   
 		List<Rute> liste = sr.rutelist();
-		model.addAttribute("ruteliste", liste);
+		model.addAttribute("ruteliste", liste.stream().sorted((x, y) -> y.getRutenummer() - x.getRutenummer()).toList());
 		model.addAttribute("spiller", new Spiller());
 		model.addAttribute("spillerliste", spillerliste);
 		model.addAttribute("spillerkoe", spillerkoe);
 		
+		//BARE FOR Å SLIPPE Å REGISTRERE SPILLERE HELE TIDEN UNDER TESTING
+		if(spillerliste.isEmpty()) {
+			spillerkoe.add(new Spiller("Spiller1"));
+			spillerkoe.add(new Spiller("Spiller2"));
+			spillerliste.add(new Spiller("Spiller1"));
+			spillerliste.add(new Spiller("Spiller2"));
+		}
+		
+		
 		if(!spillerkoe.isEmpty()) {
 			model.addAttribute("hvemSinTur",spillerkoe.peek().getNavn());
 		}
-		
 		
 	    return "testbrett";
 	}
@@ -69,12 +71,18 @@ public class helloWorldController {
 		spillerliste.add(spiller);
 		spillerkoe.add(spiller);
 		System.out.println("Lagt til spiller:" + spiller.getNavn());
-	
 		
 		ra.addFlashAttribute("lagtTil", "Spiller lagt til");
 		
 		return "redirect:";
 	}
+	
+	@PostMapping("/spillTrekk")
+	public String spillTrekk(Model model
+			) {
+		return "redirect:testbrett";
+	}
+	
 	
 	public void spillTrekk(Queue<Spiller> spillerliste) {
 		Spiller spiller1 = spillerliste.remove();
