@@ -7,23 +7,25 @@ public class Spiller {
 	private String navn;
 	private int rutelokasjon;
 
-	private TerningKaster terning;
 
 	private TerningKaster terningKaster= new TerningKaster();
 	
-	public void Spilltrekk() {
+	public int Spilltrekk() {
 		terningKaster.kastTerning();
 		if(terningKaster.getAntSeksere()>=3) {
-			this.setRutelokasjon(1);
 			if(terningKaster.getTerningKast()==6) {
 				terningKaster.restetAntSeksere();
-				this.setRutelokasjon(this.getRutelokasjon()+terningKaster.getTerningKast());
+				return terningKaster.getTerningKast();
 			}
+			return 0;
 		}
 		else {
-			this.setRutelokasjon(this.getRutelokasjon()+terningKaster.getTerningKast());
 			if(terningKaster.getTerningKast()!=6) {
 				terningKaster.restetAntSeksere();
+				return terningKaster.getTerningKast();
+			}
+			else {
+				return terningKaster.getTerningKast();
 			}
 		}
 		//TODO.....
