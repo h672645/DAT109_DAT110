@@ -36,7 +36,6 @@ public class helloWorldController {
 
 	    model.addAttribute("ruteliste", liste);
 	    
-		//tbd;
 	    return "testbrett";
 	}
 	
