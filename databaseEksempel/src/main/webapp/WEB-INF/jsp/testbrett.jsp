@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,25 +51,54 @@
 </head>
 <body>
     <div class="board">
-        <%-- You can use Java code to dynamically populate the board with cells if needed --%>
-        <%-- For simplicity, the cells are manually created here --%>
-        <%-- Add classes like player1 or player2 to represent different states on the board --%>
+    	
+        <c:if test="${fn:length(spillerliste) >= 2}">
         <c:forEach var="rute" items="${ruteliste}">
         	<div style="color:${rute.verdi < 0 ? 'red' : '' || rute.verdi > 0 ? 'green' : ''}" class="cell">
         		<div>
-        			${rute.verdi}
-        			<br>
-        			${rute.rutenummer}
+        			<c:out value="${rute.rutenummer}"></c:out>
         		</div>
         	</div>
         </c:forEach>
+        </c:if>
         <%-- Repeat the above cell div for the total number of cells (100 in this case) --%>
         <%-- You can use a loop or other methods to generate these cells dynamically --%>
-        <form:form method="post">
-            <fieldset>
-                <button type="button" onclick="spillTrekk(${spillerliste})">Gjor trekk</button>
-            </fieldset>
-        </form>
+    </div>
+    <div class="Meny"> Meny:
+    	<div class="Registrer">
+    		<form:form method="post" action="leggTilSpiller" modelAttribute="spiller">
+            	<fieldset>
+            		
+            		<form:label path="navn">Navn:</form:label>
+					<form:input path="navn" id="navn"/>
+					
+                	<button type="submit">Legg til spiller</button>
+                	<p style="color:green">${lagtTil}</p>
+                	<p style="color:red">${ikkeLagtTil}</p>
+                	<p style="color:red"><c:if test="${fn:length(spillerliste) == 1}">Venligst legg til 1 spiller til</c:if></p>
+    				<p style="color:red"><c:if test="${fn:length(spillerliste) == 0}">Venligst legg til 2 spillere</c:if></p>
+            	</fieldset>
+    		</form:form>
+    	</div>
+    
+    	<div class="Spillerliste">Spillerliste:
+    		<fieldset>
+    			<c:forEach var="spiller" items="${spillerliste}">
+    				<c:out value="${spiller.navn}"></c:out><br>
+    			</c:forEach>
+    		</fieldset>
+    	</div>
+    
+    	<div class="spiller">Hvem sin tur:
+    		<form:form method="post">
+            	<fieldset>
+            		<c:if test="${not empty hvemSinTur}">
+            			<p style="color:blue">Det er ${hvemSinTur} sin tur:</p>
+            		</c:if>
+                	<button type="button" onclick="spillTrekk(${spillerliste})">Spill trekk</button>
+            	</fieldset>
+        	</form:form>
+    	</div>
     </div>
 </body>
 </html>

@@ -29,6 +29,11 @@ public class Spiller {
 		//TODO.....
 	}
 	
+	
+	public Spiller() {
+		this.rutelokasjon = 1;
+	}
+	
 	public Spiller(String navn) {
 		this.navn = navn;
 		this.rutelokasjon = 1;
