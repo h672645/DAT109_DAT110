@@ -3,6 +3,7 @@ package no.hvl.dat108.webshop;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Queue;
 import java.util.Random;
 
@@ -25,8 +26,8 @@ import jakarta.websocket.Session;
 public class brettspillController {
 	
 	@Autowired private RuteService sr;
-	private static List<Spiller> spillerliste = new ArrayList<Spiller>();
 	private static Queue<Spiller> spillerkoe = new LinkedList<Spiller>();
+	private static int tempterningkast;
 	
 	@GetMapping("/")
 	public String foersteBesoek(Model model,
@@ -36,15 +37,12 @@ public class brettspillController {
 		List<Rute> liste = sr.rutelist();
 		model.addAttribute("ruteliste", liste.stream().sorted((x, y) -> y.getRutenummer() - x.getRutenummer()).toList());
 		model.addAttribute("spiller", new Spiller());
-		model.addAttribute("spillerliste", spillerliste);
 		model.addAttribute("spillerkoe", spillerkoe);
 		
 		//BARE FOR Å SLIPPE Å REGISTRERE SPILLERE HELE TIDEN UNDER TESTING
-		if(spillerliste.isEmpty()) {
+		if(spillerkoe.isEmpty()) {
 			spillerkoe.add(new Spiller("Spiller1"));
 			spillerkoe.add(new Spiller("Spiller2"));
-			spillerliste.add(new Spiller("Spiller1"));
-			spillerliste.add(new Spiller("Spiller2"));
 		}
 		
 		
@@ -62,13 +60,12 @@ public class brettspillController {
 			RedirectAttributes ra
 			) {
 		
-		if(spillerliste.size() >=4 || spillerkoe.size() >=4) {
+		if(spillerkoe.size() >=4) {
 			ra.addFlashAttribute("ikkeLagtTil", "Kun plass til 4 spillere");
 			
 			return "redirect:";
 		}
 		
-		spillerliste.add(spiller);
 		spillerkoe.add(spiller);
 		System.out.println("Lagt til spiller:" + spiller.getNavn());
 		
@@ -77,17 +74,54 @@ public class brettspillController {
 		return "redirect:";
 	}
 	
-	@PostMapping("/spillTrekk")
-	public String spillTrekk(Model model
+	@PostMapping("/trillTerning")
+	public String spillTrekk(Model model,
+			RedirectAttributes ra
 			) {
-		return "redirect:testbrett";
+		Spiller spiller1 = spillerkoe.peek();
+		tempterningkast = spiller1.Spilltrekk();
+		System.out.println(tempterningkast);
+		
+		ra.addFlashAttribute("terningkast", tempterningkast);
+		
+		return "redirect:";
 	}
 	
+	@PostMapping("/flyttBrikke")
+	public String flyttBrikke(Model model,
+			RedirectAttributes ra
+			) {
+		
+		Spiller spiller1 = spillerkoe.remove();
+		int startrute = spiller1.getRutelokasjon();
+		
+		if(tempterningkast == 0) {
+			spiller1.setRutelokasjon(1);
+		} else {
+			spiller1.setRutelokasjon(startrute + tempterningkast);
+		}
+		
+		List<Rute> liste = sr.rutelist();
+		for(Rute rute : liste) {
+			if(rute.getRutenummer() == spiller1.getRutelokasjon()) {
+				ra.addFlashAttribute("stige/slange", rute.getRutenummer());
+				ra.addFlashAttribute("flyttet", rute.getVerdi());
+				System.out.println(rute.getRutenummer() + rute.getVerdi());
+				spiller1.setRutelokasjon(spiller1.getRutelokasjon()+rute.getVerdi());
+			}
+		}
+		
+		spillerkoe.add(spiller1);
+		
+		return "redirect:";
+	}
 	
-	public void spillTrekk(Queue<Spiller> spillerliste) {
-		Spiller spiller1 = spillerliste.remove();
-		spiller1.Spilltrekk();
-		spillerliste.add(spiller1);
+	public void spillTrekk(Queue<Spiller> spillerkoe) {
+		Spiller spiller1 = spillerkoe.remove();
+		int terningkast = spiller1.Spilltrekk();
+		int startrute = spiller1.getRutelokasjon();
+		spiller1.setRutelokasjon(startrute + terningkast);
+		spillerkoe.add(spiller1);
 	}
 
 }
