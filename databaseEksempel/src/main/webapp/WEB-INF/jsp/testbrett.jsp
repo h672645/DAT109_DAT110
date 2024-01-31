@@ -37,91 +37,124 @@
             font-size: 14px;
             font-weight: bold;
             background-color: #fff; /* Default background color */
+            position: relative;
         }
-
-        /* Optional: Add styles for different colors or patterns to represent different states on the board */
-        .cell.player1 {
-            background-color: #66c2ff; /* Light blue for player 1 */
+        
+        .route-number {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		padding: 1px; /* Adjust padding as needed for spacing */
+    		font-size: 10px; /* Adjust font size as needed */
+		}
+        
+        
+        .Meny{
+        	display: inline-grid;
+        	width:300px;
+        	height:500px;
         }
-
-        .cell.player2 {
-            background-color: #ff6666; /* Light red for player 2 */
+        
+        .terningkast p{
+        	width:200px;
         }
+        
+        .Meny fieldset{
+        	margin-top:1px;
+        }
+        
+        .spillerfelt{
+        	height:150px;
+        	background-color:;
+        }
+        
+        .hvemsintur{
+        	background-color:;
+        	height:150px;
+        }
+        
+        .spillerkoe{
+        	background-color:;
+        	height:80px;
+        }
+        
     </style>
 </head>
 <body>
     <div class="board">
     	
         <c:if test="${fn:length(spillerkoe) >= 2}">
-        <c:forEach var="rute" items="${ruteliste}">
-        	<div class="cell" style="color:${rute.verdi < 0 ? 'red' : '' || rute.verdi > 0 ? 'green' : ''}" >
-        		<c:out value="${rute.rutenummer}"></c:out>
-        		
-        		<c:if test="${rute.rutenummer == 1 || rute.rutenummer == 100}">
-        			<br>${rute.rutenummer == 1 ? 'Start':'Mål'}
-        		</c:if>
-        		<c:forEach var="spiller" items="${spillerkoe}">
-        		<c:if test="${spiller.rutelokasjon == rute.rutenummer}">
-        			<br>${spiller.navn}
-        		</c:if>
-        	</c:forEach>
-        	</div>
+        	<c:forEach var="rute" items="${ruteliste}">
+        		<div class="cell" style="background-color:${rute.verdi < 0 ? '#ffcccb' : '' || rute.verdi > 0 ? 'lightgreen' : ''}" >
+        			<c:choose>
+        				<c:when test="${rute.rutenummer == 1 || rute.rutenummer == 100}">
+        					<div class="route-number" style="font-weight: bolder;font-size: 16px;">${rute.rutenummer == 1 ? 'Start':'Mål'}</div>
+        				</c:when>
+        				<c:otherwise>
+        					<div class="route-number">${rute.rutenummer}</div>
+        				</c:otherwise>
+        			</c:choose>
+        			<c:forEach var="spiller" items="${spillerkoe}">
+        				<c:if test="${spiller.rutelokasjon == rute.rutenummer}">
+        					<br>${spiller.navn}
+        				</c:if>
+        			</c:forEach>
+        		</div>
         	
-        </c:forEach>
+        	</c:forEach>
         </c:if>
-        <%-- Repeat the above cell div for the total number of cells (100 in this case) --%>
-        <%-- You can use a loop or other methods to generate these cells dynamically --%>
     </div>
-    <div class="Meny"> Meny:
+    <fieldset class="Meny"> 
     	<div class="Registrer">
     		<form:form method="post" action="leggTilSpiller" modelAttribute="spiller">
-            	<fieldset>
-            		
+            	<fieldset class="spillerfelt">
             		<form:label path="navn">Navn:</form:label>
 					<form:input path="navn" id="navn"/>
-					
                 	<button type="submit">Legg til spiller</button>
-                	<p style="color:green">${lagtTil}</p>
-                	<p style="color:red">${ikkeLagtTil}</p>
-                	<p style="color:red"><c:if test="${fn:length(spillerkoe) == 1}">Venligst legg til 1 spiller til</c:if></p>
-    				<p style="color:red"><c:if test="${fn:length(spillerkoe) == 0}">Venligst legg til 2 spillere</c:if></p>
+                	<c:if test="${not empty lagtTil}"><p style="color:green">${lagtTil}</p></c:if>
+                	<c:if test="${not empty ikkeLagtTil}"><p style="color:red">${ikkeLagtTil}</p></c:if>
+                	<c:if test="${fn:length(spillerkoe) == 1}"><p style="color:red">Venligst legg til 1 spiller til</p></c:if>
+    				<c:if test="${fn:length(spillerkoe) == 0}"><p style="color:red">Venligst legg til 2 spillere</p></c:if>
             	</fieldset>
     		</form:form>
     	</div>
     
-    	<div class="Spillerkoe">Spillerkø:
-    		<fieldset>
+    	<div>Spillerkø:
+    		<fieldset class="spillerkoe">
     			<c:forEach var="spiller" items="${spillerkoe}">
     				<c:out value="${spiller.navn}"></c:out><br>
     			</c:forEach>
     		</fieldset>
-    	</div>
-    	<fieldset>
-    	<div class="spiller">Hvem sin tur:
-    		<form:form method="post" action="trillTerning">
+    	</div>Hvem sin tur:
+    		<fieldset class="hvemsintur">
+    			<form:form method="post" action="trillTerning">
             	
-            		<c:if test="${not empty hvemSinTur}">
-            			<p style="color:blue">Det er ${hvemSinTur} sin tur:</p>
-            		</c:if>
-                	<c:if test="${empty terningkast}">
-                		<button type="submit">Trill terning</button>
-                	</c:if>
+            			<c:if test="${not empty hvemSinTur}">
+            				<p style="color:blue">Det er ${hvemSinTur} sin tur:</p>
+            			</c:if>
+                		<c:if test="${empty terningkast}">
+                			<button type="submit">Trill terning</button>
+                		</c:if>
             	
-        	</form:form>
-    	</div>
-    	<div class="terningkast">
-    		<form:form method="post" action="flyttBrikke">
-    			<c:if test="${not empty spesiellrute}">
-    				<p>Oi! Du havnet på rute ${spesiellrute} som er en ${flyttet < 0 ? 'slange':'stige'} og du ble flyttet ${flyttet} tilbake</p>
-    			</c:if>
+        		</form:form>
+    		
+    		
+    			<form:form method="post" action="flyttBrikke">
+    				<c:if test="${not empty flyttet}">
+    					<p>Oi! Du havnet på rute ${spesialrute} som er en ${flyttet < 0 ? 'slange':'stige'} og du ble flyttet ${flyttet} ${flyttet < 0 ? 'tilbake':'fram'}</p>
+    				</c:if>
     			
-    			<c:if test="${not empty terningkast}">
-    				<p>Du trillet: ${terningkast}</p>
-    				<button type="submit">Flytt spiller</button>
-    			</c:if>
-    		</form:form>
-    	</div>
-    	</fieldset>
-    </div>
+    				<c:if test="${not empty terningkast}">
+    					<button type="submit">Flytt spiller</button>
+    				</c:if>
+    				<c:if test="${not empty terningkast}">
+    					<p>Du trillet: ${terningkast}</p>
+    				</c:if>
+    				<c:if test="${not empty uflaks}">
+    					<p>${uflaks}</p>
+    				</c:if>
+    			</form:form>
+    		</fieldset>
+    </fieldset>
 </body>
 </html>

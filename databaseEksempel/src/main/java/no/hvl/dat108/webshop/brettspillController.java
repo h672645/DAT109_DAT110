@@ -27,23 +27,25 @@ public class brettspillController {
 	
 	@Autowired private RuteService sr;
 	private static Queue<Spiller> spillerkoe = new LinkedList<Spiller>();
+	private static List<Rute> liste;
 	private static int tempterningkast;
 	
 	@GetMapping("/")
 	public String foersteBesoek(Model model,
 			HttpServletRequest request
 			) {
-	   
-		List<Rute> liste = sr.rutelist();
+	   if(liste == null) {
+		   liste = sr.rutelist();
+	   }
 		model.addAttribute("ruteliste", liste.stream().sorted((x, y) -> y.getRutenummer() - x.getRutenummer()).toList());
 		model.addAttribute("spiller", new Spiller());
 		model.addAttribute("spillerkoe", spillerkoe);
 		
 		//BARE FOR Å SLIPPE Å REGISTRERE SPILLERE HELE TIDEN UNDER TESTING
-		if(spillerkoe.isEmpty()) {
-			spillerkoe.add(new Spiller("Spiller1"));
-			spillerkoe.add(new Spiller("Spiller2"));
-		}
+//		if(spillerkoe.isEmpty()) {
+//			spillerkoe.add(new Spiller("Spiller1"));
+//			spillerkoe.add(new Spiller("Spiller2"));
+//		}
 		
 		
 		if(!spillerkoe.isEmpty()) {
@@ -80,7 +82,6 @@ public class brettspillController {
 			) {
 		Spiller spiller1 = spillerkoe.peek();
 		tempterningkast = spiller1.Spilltrekk();
-		System.out.println(tempterningkast);
 		
 		ra.addFlashAttribute("terningkast", tempterningkast);
 		
@@ -94,19 +95,18 @@ public class brettspillController {
 		
 		Spiller spiller1 = spillerkoe.remove();
 		int startrute = spiller1.getRutelokasjon();
-		
+
 		if(tempterningkast == 0) {
 			spiller1.setRutelokasjon(1);
+			ra.addFlashAttribute("uflaks", "Oi, du har trillet 3 seksere på rad og har ble derfor satt tilbake til start.\n Du må nå trille en 6-er for å forlate startruten.");
 		} else {
 			spiller1.setRutelokasjon(startrute + tempterningkast);
 		}
 		
-		List<Rute> liste = sr.rutelist();
 		for(Rute rute : liste) {
-			if(rute.getRutenummer() == spiller1.getRutelokasjon()) {
-				ra.addFlashAttribute("stige/slange", rute.getRutenummer());
+			if(rute.getVerdi() != 0 && rute.getRutenummer() == spiller1.getRutelokasjon()) {
+				ra.addFlashAttribute("spesialrute", rute.getRutenummer());
 				ra.addFlashAttribute("flyttet", rute.getVerdi());
-				System.out.println(rute.getRutenummer() + rute.getVerdi());
 				spiller1.setRutelokasjon(spiller1.getRutelokasjon()+rute.getVerdi());
 			}
 		}
