@@ -7,7 +7,6 @@ public class Spiller {
 	private String navn;
 	private int rutelokasjon;
 
-	private TerningKaster terning;
 
 	private TerningKaster terningKaster= new TerningKaster();
 	
