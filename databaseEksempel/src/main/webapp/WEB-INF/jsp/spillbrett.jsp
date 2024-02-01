@@ -91,7 +91,7 @@
         					<div class="route-number" style="font-weight: bolder;font-size: 16px;">${rute.rutenummer == 1 ? 'Start':'Mål'}</div>
         				</c:when>
         				<c:otherwise>
-        					<div class="route-number">${rute.rutenummer}</div>
+        					<div class="route-number">${rute.rutenummer}<c:if test="${rute.verdi != 0}"> til ${rute.rutenummer + rute.verdi}</c:if></div>
         				</c:otherwise>
         			</c:choose>
         			<c:forEach var="spiller" items="${spillerkoe}">
@@ -152,6 +152,9 @@
     				</c:if>
     				<c:if test="${not empty uflaks}">
     					<p>${uflaks}</p>
+    				</c:if>
+    				<c:if test="${not empty maalgang}">
+    					<p>${maalgang}</p>
     				</c:if>
     			</form:form>
     		</fieldset>
