@@ -105,6 +105,7 @@ public class brettspillController {
 
 				ra.addFlashAttribute("vinner", spiller1.getNavn());
 				spillerkoe.add(spiller1);
+				spillerkoe.clear();
 				return "redirect:" + "/vinner";
 			}
 
