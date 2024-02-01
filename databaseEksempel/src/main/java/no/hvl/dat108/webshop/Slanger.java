@@ -3,7 +3,6 @@ package no.hvl.dat108.webshop;
 public class Slanger {
 
     private int lengde;
-
     //oprette objekt
     public Slanger(){
         this.lengde=0;
