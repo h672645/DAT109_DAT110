@@ -110,7 +110,7 @@ public class brettspillController {
 
 			spiller1.setRutelokasjon(startrute + tempterningkast);
 		}
-
+      // hello 
 		for (Rute rute : liste) {
 			if (rute.getVerdi() != 0 && rute.getRutenummer() == spiller1.getRutelokasjon()) {
 				ra.addFlashAttribute("spesialrute", rute.getRutenummer());
