@@ -32,7 +32,8 @@ public class brettspillController {
 	@GetMapping("/")
 	public String foersteBesoek(Model model,
 			HttpServletRequest request
-			) {
+			) 
+	{
 	   
 		List<Rute> liste = sr.rutelist();
 		model.addAttribute("ruteliste", liste.stream().sorted((x, y) -> y.getRutenummer() - x.getRutenummer()).toList());
