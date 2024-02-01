@@ -82,8 +82,8 @@
 </head>
 <body>
     <div class="board">
-    	
-        <c:if test="${fn:length(spillerkoe) >= 2}">
+    	<%--<c:if test="${fn:length(spillerkoe) >= 2}">--%>
+         
         	<c:forEach var="rute" items="${ruteliste}">
         		<div class="cell" style="background-color:${rute.verdi < 0 ? '#ffcccb' : '' || rute.verdi > 0 ? 'lightgreen' : ''}" >
         			<c:choose>
@@ -102,7 +102,7 @@
         		</div>
         	
         	</c:forEach>
-        </c:if>
+        <%--></c:if>--%>
     </div>
     <fieldset class="Meny"> 
     	<div class="Registrer">
@@ -132,10 +132,11 @@
             			<c:if test="${not empty hvemSinTur}">
             				<p style="color:blue">Det er ${hvemSinTur} sin tur:</p>
             			</c:if>
-                		<c:if test="${empty terningkast}">
-                			<button type="submit">Trill terning</button>
-                		</c:if>
-            	
+                		<c:if test="${fn:length(spillerkoe) >= 2}">
+                			<c:if test="${empty terningkast}">
+                				<button type="submit">Trill terning</button>
+                			</c:if>
+            			</c:if>
         		</form:form>
     		
     		

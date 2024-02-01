@@ -42,10 +42,10 @@ public class brettspillController {
 		model.addAttribute("spillerkoe", spillerkoe);
 
 		// BARE FOR Å SLIPPE Å REGISTRERE SPILLERE HELE TIDEN UNDER TESTING
-		if(spillerkoe.isEmpty()) {
-			spillerkoe.add(new Spiller("Spiller1"));
-			spillerkoe.add(new Spiller("Spiller2"));
-		}
+//		if(spillerkoe.isEmpty()) {
+//			spillerkoe.add(new Spiller("Spiller1"));
+//			spillerkoe.add(new Spiller("Spiller2"));
+//		}
 
 		if (!spillerkoe.isEmpty()) {
 			model.addAttribute("hvemSinTur", spillerkoe.peek().getNavn());
@@ -103,7 +103,7 @@ public class brettspillController {
 			
 			if (startrute + tempterningkast == 100) {
 
-				ra.addFlashAttribute("vinner", spiller1.getNavn() + " kom først i mål!");
+				ra.addFlashAttribute("vinner", spiller1.getNavn());
 				spillerkoe.add(spiller1);
 				return "redirect:" + "/vinner";
 			}
