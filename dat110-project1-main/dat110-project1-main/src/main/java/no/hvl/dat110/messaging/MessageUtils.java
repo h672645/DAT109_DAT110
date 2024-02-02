@@ -22,7 +22,8 @@ public class MessageUtils {
 		segment[0]=(byte) byteLength;
 		// TODO - START
 		for(int i=0;i<byteLength;i++) {
-			segment[++i]=data[0];
+			int j = i;
+			segment[++j]=data[i];
 		}
 		
 		// encapulate/encode the payload data of the message and form a segment
@@ -44,7 +45,8 @@ public class MessageUtils {
 		byte[] payload = new byte[length];
 		
 		for(int i=0;i<length;i++) {
-			payload[i]=segment[++i];
+			int j = i;
+			payload[j]=segment[++j];
 		}
 		message=new Message(payload);
 		
