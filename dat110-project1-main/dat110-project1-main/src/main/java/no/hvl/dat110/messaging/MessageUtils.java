@@ -42,6 +42,7 @@ public class MessageUtils {
 		Message message = null;
 		
 		int length= segment[0];
+		
 		byte[] payload = new byte[length];
 		
 		for(int i=0;i<length;i++) {
