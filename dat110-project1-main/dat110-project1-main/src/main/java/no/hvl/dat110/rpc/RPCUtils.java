@@ -123,7 +123,7 @@ public class RPCUtils {
 		
 		byte[] encoded = null;
 		
-		encoded = ByteBuffer.allocate(4).putInt(x).array();
+		encoded = ByteBuffer.allocate(Integer.BYTES).putInt(x).array();
 		
 		// TODO - START 
 		
@@ -138,8 +138,10 @@ public class RPCUtils {
 		int decoded = 0;
 		
 		for(int i=0;i<data.length;i++) {
+			decoded+=(int) data	[i];
 			System.out.print((int) data[i]);
 		}
+		decoded = decoded & 0xFF;
 		// TODO - START 
 		
 		// TODO - END
