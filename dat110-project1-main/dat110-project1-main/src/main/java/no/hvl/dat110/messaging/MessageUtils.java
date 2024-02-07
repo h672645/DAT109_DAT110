@@ -21,6 +21,7 @@ public class MessageUtils {
 		
 		segment[0]=(byte) byteLength;
 		// TODO - START
+		
 		for(int i=0;i<byteLength;i++) {
 			int j = i;
 			segment[++j]=data[i];

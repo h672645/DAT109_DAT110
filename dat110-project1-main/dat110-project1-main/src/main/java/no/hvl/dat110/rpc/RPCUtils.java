@@ -137,6 +137,7 @@ public class RPCUtils {
 		
 		int decoded = 0;
 		
+		
 		for(int i=0;i<data.length;i++) {
 			decoded+=(int) data	[i];
 			System.out.print((int) data[i]);
