@@ -28,7 +28,6 @@ public class Spiller {
 				return terningKaster.getTerningKast();
 			}
 		}
-		//TODO.....
 	}
 	
 	

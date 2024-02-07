@@ -26,7 +26,4 @@ public class TerningKaster {
 	public int getTerningKast() {
 		return this.terningkast;
 	}
-	public void setTilTreSeksere() {
-		this.sekserePaaRad=3;
-	}
 }
