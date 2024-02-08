@@ -45,19 +45,41 @@ public class RPCClient {
 	public byte[] call(byte rpcid, byte[] param) {
 		
 		byte[] returnval = null;
+		byte[] encapsulated = null;
 		
 		// TODO - START
-
-		byte[] enkaspsulert = RPCUtils.encapsulate(rpcid, returnval);
+		if(param != null) {
+			encapsulated = RPCUtils.encapsulate(rpcid, param);
+		} else {
+			return null;
+		}
+		
 		/*
 		The rpcid and param must be encapsulated according to the RPC message format
 
 		The return value from the RPC call must be decapsulated according to the RPC message format
 
 		*/
-		
-		returnval = RPCUtils.decapsulate(enkaspsulert);
-		
+		boolean sjekk = false;
+
+	    if (sjekk != true) {
+	        try {
+	            // Send RPC request message to the server
+	            Message requestMessage = new Message(encapsulated);
+	            connection.send(requestMessage);
+
+	            // Receive RPC reply message from the server
+	            Message receivedMessage = connection.receive();
+
+	            // Decapsulate the return value from the RPC reply message
+	            if (receivedMessage != null) {
+	                returnval = RPCUtils.decapsulate(receivedMessage.getData());
+	            }
+
+	        } finally {
+	            sjekk = true;
+	        }
+	    }
 		// TODO - END
 		return returnval;
 		

@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import no.hvl.dat110.TODO;
 import no.hvl.dat110.messaging.MessageConnection;
+import no.hvl.dat110.messaging.MessageUtils;
 import no.hvl.dat110.messaging.Message;
 import no.hvl.dat110.messaging.MessagingServer;
 
@@ -43,13 +44,27 @@ public class RPCServer {
 		   
 		   // TODO - START
 		   // - receive a Message containing an RPC request
+		   requestmsg = connection.receive();
+		   
 		   // - extract the identifier for the RPC method to be invoked from the RPC request
+		   rpcid = requestmsg.getData()[0];
+		   
 		   // - extract the method's parameter by decapsulating using the RPCUtils
+		   byte[] parameter  = RPCUtils.decapsulate(requestmsg.getData());
+		   
 		   // - lookup the method to be invoked
+		   RPCRemoteImpl rpcImpl = services.get(rpcid);
+		   
 		   // - invoke the method and pass the param
+		   byte[] returverdi = rpcImpl.invoke(parameter);
+		   
 		   // - encapsulate return value 
+		   byte[] enkapsulertreturverdi = RPCUtils.encapsulate(rpcid, returverdi);
+		   
 		   // - send back the message containing the RPC reply
-			
+		   Message returmelding = new Message(enkapsulertreturverdi);
+		   connection.send(returmelding);
+		   
 		   if (true)
 				throw new UnsupportedOperationException(TODO.method());
 		   
