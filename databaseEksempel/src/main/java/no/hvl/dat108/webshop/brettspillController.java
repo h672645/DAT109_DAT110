@@ -67,7 +67,6 @@ public class brettspillController {
 		}
 
 		spillerkoe.add(spiller);
-		System.out.println("Lagt til spiller:" + spiller.getNavn());
 
 		ra.addFlashAttribute("lagtTil", "Spiller lagt til");
 
