@@ -54,16 +54,16 @@ public class MessageConnection {
 	public Message receive() {
 
 		Message message = null;
-		byte[] data;
+		byte[] data = new byte[MessageUtils.SEGMENTSIZE];
 		
 		
 		try {
-			data = new byte[MessageUtils.SEGMENTSIZE];
+			
 			int forstebyte = inStream.read(data,0,MessageUtils.SEGMENTSIZE);
-			if(forstebyte!=MessageUtils.SEGMENTSIZE) {
+			if(forstebyte != MessageUtils.SEGMENTSIZE) {
 				throw new IOException("FEIL");
 			}
-			message = MessageUtils.decapsulate(data);
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -71,7 +71,7 @@ public class MessageConnection {
 		
 		// TODO - START
 		// read a segment from the input stream and decapsulate data into a Message
-		
+		message = MessageUtils.decapsulate(data);
 		
 		// TODO - END
 		

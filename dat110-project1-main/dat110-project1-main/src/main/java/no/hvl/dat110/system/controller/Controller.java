@@ -27,8 +27,8 @@ public class Controller  {
 		// TODO - START
 		
 		// create local display and sensor stub objects
-		display= new DisplayStub(displayclient);
-		sensor= new SensorStub(sensorclient);
+		display = new DisplayStub(displayclient);
+		sensor = new SensorStub(sensorclient);
 
 		// connect to sensor and display RPC servers - using the RPCClients
 		displayclient.connect();

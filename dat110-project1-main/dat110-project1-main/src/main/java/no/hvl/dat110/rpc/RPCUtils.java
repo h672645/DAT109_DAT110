@@ -85,6 +85,7 @@ public class RPCUtils {
 	public static byte[] marshallVoid() {
 		
 		byte[] encoded = null;
+		encoded = new byte[0];
 		
 		// TODO - START 
 		

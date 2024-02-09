@@ -48,40 +48,48 @@ public class RPCClient {
 
 		byte[] returnval = null;
 		byte[] encapsulated = null;
-
-		// TODO - START
-		if (param != null) {
-			encapsulated = RPCUtils.encapsulate(rpcid, param);
-		} else {
-			return null;
-		}
-
-		/*
-		 * The rpcid and param must be encapsulated according to the RPC message format
-		 * 
-		 * The return value from the RPC call must be decapsulated according to the RPC
-		 * message format
-		 * 
-		 */
-		boolean sjekk = false;
-
-		while (sjekk != true) {
-
-			// Send RPC request message to the server
-			Message requestMessage = new Message(encapsulated);
-			connection.send(requestMessage);
-
-			// Receive RPC reply message from the server
-			Message receivedMessage = connection.receive();
-
-			// Decapsulate the return value from the RPC reply message
-			if (receivedMessage != null) {
-				returnval = RPCUtils.decapsulate(receivedMessage.getData());
-			}
-
-			sjekk = true;
-
-		}
+//
+//		// TODO - START
+//		if (param != null) {
+//			encapsulated = RPCUtils.encapsulate(rpcid, param);
+//		} else {
+//			return null;
+//		}
+//
+//		/*
+//		 * The rpcid and param must be encapsulated according to the RPC message format
+//		 * 
+//		 * The return value from the RPC call must be decapsulated according to the RPC
+//		 * message format
+//		 * 
+//		 */
+//		boolean sjekk = false;
+//
+//		while (sjekk != true) {
+//
+//			// Send RPC request message to the server
+//			Message requestMessage = new Message(encapsulated);
+//			connection.send(requestMessage);
+//
+//			// Receive RPC reply message from the server
+//			Message receivedMessage = connection.receive();
+//
+//			// Decapsulate the return value from the RPC reply message
+//			if (receivedMessage != null) {
+//				returnval = RPCUtils.decapsulate(receivedMessage.getData());
+//			}
+//
+//			sjekk = true;
+//
+//		}
+		
+		encapsulated = RPCUtils.encapsulate(rpcid, param);
+		Message rpcmsg = new Message(encapsulated);
+		connection.send(rpcmsg);
+		Message reply = connection.receive();
+		byte[] rpcreply = reply.getData();
+		returnval = RPCUtils.decapsulate(rpcreply);
+		
 		// TODO - END
 		return returnval;
 
