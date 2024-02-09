@@ -67,6 +67,10 @@ public class RPCUtils {
 		
 		String decoded = null; 
 		
+		if(data == null) {
+			return null;
+		}
+		
 		for(int i=0;i<data.length;i++) {
 		}
 		decoded = new String(data);

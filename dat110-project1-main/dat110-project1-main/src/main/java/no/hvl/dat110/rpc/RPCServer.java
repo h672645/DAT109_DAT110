@@ -65,9 +65,9 @@ public class RPCServer {
 		   Message returmelding = new Message(enkapsulertreturverdi);
 		   connection.send(returmelding);
 		   
-		   if (true)
-				throw new UnsupportedOperationException(TODO.method());
-		   
+//		   if (true)
+//				throw new UnsupportedOperationException(TODO.method());
+//		   
 		   // TODO - END
 
 			// stop the server if it was stop methods that was called
