@@ -23,8 +23,7 @@ public class MessageUtils {
 		// TODO - START
 		
 		for(int i=0;i<byteLength;i++) {
-			int j = i;
-			segment[++j]=data[i];
+			segment[i+1]=data[i];
 		}
 		
 		// encapulate/encode the payload data of the message and form a segment
@@ -42,21 +41,9 @@ public class MessageUtils {
 
 		Message message = null;
 		
-		int length= segment[0];
-		
-		byte[] payload = new byte[length];
-		
-		for(int i=0;i<length;i++) {
-			int j = i;
-			payload[j]=segment[++j];
-		}
-		message=new Message(payload);
-		
-		// TODO - START
-		// decapsulate segment and put received payload data into a message
-		
-		
-		// TODO - END
+		int length = segment[0];
+		byte[] data = Arrays.copyOfRange(segment, 1, length+1);
+		message = new Message(data);
 		
 		return message;
 		

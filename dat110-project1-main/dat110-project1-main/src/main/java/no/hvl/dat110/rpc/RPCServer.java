@@ -47,7 +47,9 @@ public class RPCServer {
 		   requestmsg = connection.receive();
 		   
 		// - extract the identifier for the RPC method to be invoked from the RPC request
-		   rpcid = requestmsg.getData()[0];
+		   byte[] rpcrequest = requestmsg.getData();
+		   rpcid = rpcrequest[0];
+		   
 		   
 		// - lookup the method to be invoked
 		   RPCRemoteImpl rpcImpl = services.get(rpcid);

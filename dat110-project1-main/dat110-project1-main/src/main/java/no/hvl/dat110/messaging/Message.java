@@ -10,7 +10,7 @@ public class Message {
 	// construction a Message with the data provided
 	public Message(byte[] data) {
 		
-		if (data==null||data.length>128) {
+		if (data==null||data.length>=MessageUtils.SEGMENTSIZE) {
 			throw new UnsupportedOperationException(TODO.constructor("Message"));
 		}
 		this.data=data;
