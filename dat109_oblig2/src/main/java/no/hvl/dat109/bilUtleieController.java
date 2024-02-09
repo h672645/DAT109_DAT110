@@ -23,15 +23,17 @@ import jakarta.servlet.http.HttpSession;
 import jakarta.websocket.Session;
 
 @Controller
-public class brettspillController {
-
-	private static Queue<Spiller> spillerkoe = new LinkedList<Spiller>();
+public class bilUtleieController {
+    
+	@Autowired private BilService bilserv;
+	private static List<Bil> bilListe = new LinkedList<Bil>();
 
 	@GetMapping("/")
 	public String foersteBesoek(Model model, HttpServletRequest request) {
 		
-		model.addAttribute("spiller", new Spiller());
-		model.addAttribute("spillerkoe", spillerkoe);
-		return "spillbrett";
+		model.addAttribute("billiste", new Bil());
+		//model.addAttribute("spillerkoe", spillerkoe);
+
+		return "billiste";
 	}
 }
