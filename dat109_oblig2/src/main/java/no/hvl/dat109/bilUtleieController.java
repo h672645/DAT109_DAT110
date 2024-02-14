@@ -13,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,16 +25,14 @@ import jakarta.websocket.Session;
 
 @Controller
 public class bilUtleieController {
-    
-	@Autowired private BilService bilserv;
-	private static List<Bil> bilListe = new LinkedList<Bil>();
-
+        
+	
 	@GetMapping("/")
-	public String foersteBesoek(Model model, HttpServletRequest request) {
+	public String foersteBesoek(Model model) {
 		
-		model.addAttribute("billiste", new Bil());
+		//model.addAttribute("billiste", new Bil());
 		//model.addAttribute("spillerkoe", spillerkoe);
 
-		return "billiste";
+		return "bil";
 	}
 }

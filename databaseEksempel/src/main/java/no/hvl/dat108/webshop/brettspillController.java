@@ -32,7 +32,7 @@ public class brettspillController {
 	private static int tempterningkast;
 
 	@GetMapping("/")
-	public String foersteBesoek(Model model, HttpServletRequest request) {
+	public String foersteBesoek(Model model) {
 		if (liste == null) {
 			liste = sr.rutelist();
 		}

@@ -8,12 +8,14 @@ import org.springframework.stereotype.Service;
 @Service
 public  class BilService{
 
-@Autowired private BilRepo bilrepo;
+@Autowired  private BilRepo bilrepo;
 
-public Bil finnBil(String regNr){
+ public  Bil finnBil(String regNr){
     return bilrepo.findBilByRegNr(regNr);
 }
-public  List<Bil> BilListe(){
-    return bilrepo.findAllBil();
+
+
+  public  List<Bil> bilListe(){
+    return bilrepo.findAll();
 }
 }

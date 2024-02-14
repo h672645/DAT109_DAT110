@@ -4,20 +4,34 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity
-@Table(name="Bil",schema="Dat109")
-public class Bil {
 
+@Entity
+@Table(name="Bil" ,schema="Dat109")
+public class Bil {
 	@Id
 	private String regNr;
+
 	private String merke;
-	private String Model;
+	private String model;
 	private String farge;
 	private String kategori;
 	private boolean ledig;
+
+	public Bil(){
+	}
+	public Bil(String regNr,String merke,String model,String farge,String kategori,boolean ledig){
+             this.regNr=regNr;
+			 this.merke=merke;
+			 this.model=model;
+			 this.farge=farge;
+			 this.kategori=kategori;
+			 this.ledig=ledig;
+	};
+
 	public String getRegNr() {
 		return regNr;
 	}
+
 	public void setRegNr(String regNr) {
 		this.regNr = regNr;
 	}
@@ -28,10 +42,10 @@ public class Bil {
 		this.merke = merke;
 	}
 	public String getModel() {
-		return Model;
+		return model;
 	}
 	public void setModel(String model) {
-		Model = model;
+		this.model = model;
 	}
 	public String getFarge() {
 		return farge;

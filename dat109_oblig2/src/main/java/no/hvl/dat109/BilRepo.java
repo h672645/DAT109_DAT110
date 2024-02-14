@@ -1,7 +1,7 @@
 package no.hvl.dat109;
 
 import java.util.List;
-import java.util.Optional;
+
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -9,8 +9,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface BilRepo extends JpaRepository<Bil,String> {
          
-     Bil findBilByRegNr(String regNr);
+      Bil findBilByRegNr(String regNr);
 
-     List<Bil>findAllBil() ;
+      List<Bil>findAll() ;
         
 }
