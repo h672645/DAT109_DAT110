@@ -35,4 +35,12 @@ public class bilUtleieController {
 
 		return "bil";
 	}
+	@GetMapping("/registrering")
+	public String registreringSide(Model model) {
+		return "brukerRegistrering";
+	}
+	@GetMapping("utleie")
+	public String utleie(Model model) {
+		return "leieSide";
+	}
 }
