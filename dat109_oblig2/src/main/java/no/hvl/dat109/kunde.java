@@ -1,20 +1,20 @@
 package no.hvl.dat109;
 
-public class kunde {
+public class Kunde {
     private String fornavn;
     private String etternavn;
-    private String addressa;
+    private String adressa;
     private String telefonnummer;
     private String  kreditkortnr;
 
 
-    public kunde(){
+    public Kunde(){
 
     }
-    public kunde(String fornavn, String etternavn, String addressa, String telefonnummer, String kreditkortnr) {
+    public Kunde(String fornavn, String etternavn, String adressa, String telefonnummer, String kreditkortnr) {
         this.fornavn = fornavn;
         this.etternavn = etternavn;
-        this.addressa = addressa;
+        this.adressa = adressa;
         this.telefonnummer = telefonnummer;
         this.kreditkortnr = kreditkortnr;
     }
@@ -32,10 +32,10 @@ public class kunde {
         this.etternavn = etternavn;
     }
     public String getAddressa() {
-        return addressa;
+        return adressa;
     }
-    public void setAddressa(String addressa) {
-        this.addressa = addressa;
+    public void setAddressa(String adressa) {
+        this.adressa = adressa;
     }
     public String getTelefonnummer() {
         return telefonnummer;
