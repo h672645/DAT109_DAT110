@@ -28,18 +28,25 @@ public class bilUtleieController {
         
 	
 	@GetMapping("/")
-	public String foersteBesoek(Model model) {
+	public String foersteBesoek(Model model ) {
 		
-		//model.addAttribute("billiste", new Bil());
+		//model.addAttribute("kunde" , new kunde());
 		//model.addAttribute("spillerkoe", spillerkoe);
 
-		return "bil";
+		return "registerering";
 	}
-	@GetMapping("/registrering")
-	public String registreringSide(Model model) {
-		return "brukerRegistrering";
+	@PostMapping("/")
+	public String registreringSide(HttpSession request,RedirectAttributes ra  , @RequestParam String fornavn,@RequestParam String etternavn,@RequestParam String adressa,
+	@RequestParam String telefonnummer, @RequestParam String kreditkortnr) {
+      
+		ra.addFlashAttribute("fornavn" ,fornavn);
+		ra.addFlashAttribute("etternavn" ,etternavn);
+		ra.addFlashAttribute("telefonnummer" ,telefonnummer);
+		ra.addFlashAttribute("addressa" ,adressa);
+		ra.addFlashAttribute("kreditkortnr" ,kreditkortnr);
+		return "redirect:leiut";
 	}
-	@GetMapping("utleie")
+	@PostMapping("utleie")
 	public String utleie(Model model) {
 		return "leieSide";
 	}
