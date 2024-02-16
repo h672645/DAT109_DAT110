@@ -11,7 +11,11 @@ public class Kunde {
     public Kunde(){
 
     }
+
+    
+
     public Kunde(String fornavn, String etternavn, String adressa, String telefonnummer, String kreditkortnr) {
+
         this.fornavn = fornavn;
         this.etternavn = etternavn;
         this.adressa = adressa;
