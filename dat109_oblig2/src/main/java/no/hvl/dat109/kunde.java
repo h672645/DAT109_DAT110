@@ -1,6 +1,6 @@
 package no.hvl.dat109;
 
-public class kunde {
+public class Kunde {
     private String fornavn;
     private String etternavn;
     private String addressa;
@@ -8,10 +8,10 @@ public class kunde {
     private String  kreditkortnr;
 
 
-    public kunde(){
+    public Kunde(){
 
     }
-    public kunde(String fornavn, String etternavn, String addressa, String telefonnummer, String kreditkortnr) {
+    public Kunde(String fornavn, String etternavn, String addressa, String telefonnummer, String kreditkortnr) {
         this.fornavn = fornavn;
         this.etternavn = etternavn;
         this.addressa = addressa;
