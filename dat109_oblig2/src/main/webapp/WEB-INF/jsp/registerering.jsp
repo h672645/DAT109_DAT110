@@ -7,15 +7,15 @@
     </head>
     <body>
         <h1>Registrer deg!</h1>
-        <form method="get">
+        <form:form   action="/"   method="post" modelAttribute="kunde">
         <fieldset>
             <legend>velkommen til bilutleiselskap</legend>
             <label path="fornavn">fornavn</label>
             <input path="fornavn" id="fornavn"></input><br>
             <label path="etternavn">etternavn</label>
             <input path="etternavn" id="etternavn"></input><br>
-            <label path="adresse">adresse</label>
-            <input path="adresse" id="adresse"></input><br>
+            <label path="adresse">adressa</label>
+            <input path="adresse" id="adressa"></input><br>
             <label path="tlfnummer">telefon nummer</label>
             <input path="tlfnummer" id="tlfnummer"></input><br>
             <label path="kreditkortnr">kreditkort nummer</label>
@@ -23,6 +23,6 @@
             <label path="registerer" ></label>
             <button type="submit"> registerer </button>
         </fieldset>
-    </form>
+    </form:form>
     </body>
 </html>

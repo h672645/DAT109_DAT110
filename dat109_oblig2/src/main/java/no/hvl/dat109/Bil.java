@@ -26,7 +26,7 @@ public class Bil {
 			 this.farge=farge;
 			 this.kategori=kategori;
 			 this.ledig=ledig;
-	};
+	}
 
 	public String getRegNr() {
 		return regNr;
