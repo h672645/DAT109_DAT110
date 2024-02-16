@@ -25,11 +25,12 @@ import jakarta.websocket.Session;
 
 @Controller
 public class bilUtleieController {
-        
+        private Kunde kunde;
+		@Autowired private BilService bs;
 	
 	@GetMapping("/")
-	public String foersteBesoek( ) {
-		
+	public String foersteBesoek() {
+		 
 		//model.addAttribute("kunde" , new kunde());
 		//model.addAttribute("spillerkoe", spillerkoe);
 
@@ -37,13 +38,32 @@ public class bilUtleieController {
 	}
 		@PostMapping("/")
 		public String registreringSide(  Model model,  @ModelAttribute("Kunde") Kunde kunde   ) {
-		model.addAttribute("Kunde" ,new Kunde());
+		model.addAttribute("kunde" ,new Kunde());
 			
              
 		return "redirect:leieut";
 	}
 	@GetMapping("/leieut")
-	public String utleie(Model model) {
+	public String utleie(Model model ) {
+
 		return "leieut";
 	}
+	
+
+	@PostMapping("/bekreft-reservasjon")
+    public String bekreftReservasjon(@RequestParam("bilType") String bilType, Model model) {
+        Bil valgtBil = bs.bilListe().stream()
+                                           .filter(bil -> bil.getKategori().equals(bilType))
+                                           .findFirst()
+                                           .orElse(null);
+        
+        if (valgtBil != null) {
+            model.addAttribute("kunde", kunde);
+            model.addAttribute("bil", valgtBil);
+            return "kvittering";
+        } else {
+            model.addAttribute("feilmelding", "Det oppstod en feil under bekreftelsen av reservasjonen. Vennligst prøv igjen.");
+            return "feilmelding";
+        }
+    }
 }

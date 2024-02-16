@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Registrer deg!</h1>
-        <form:form   action="/"   method="post" modelAttribute="kunde">
+        <form action="/" method="post">
         <fieldset>
             <legend>velkommen til bilutleiselskap</legend>
             <label path="fornavn">fornavn</label>
@@ -23,6 +23,6 @@
             <label path="registerer" ></label>
             <button type="submit"> registerer </button>
         </fieldset>
-    </form:form>
+    </form>
     </body>
 </html>
