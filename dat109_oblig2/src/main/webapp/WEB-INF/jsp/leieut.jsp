@@ -8,17 +8,17 @@
     <body>
         <h1>Velg bilkategori!</h1>
         <form method="post"    action="/leieut">
-            <label path="bil">velg bil</label>
-            <select id="bil" path="bil">
-                <option value="sedan">Sedan</option>
-                <option value="stor">Sport</option>
-                <option value="liten">Familie</option>
-                <option value="familie">SUV</option>
+            <label name="bil" path="bil">velg bil</label>
+            <select name="bil" id="bil" path="bil">
+                <option value="Sedan">Sedan</option>
+                <option value="Sport">Sport</option>
+                <option value="Familie">Familie</option>
+                <option value="SUV">SUV</option>
             </select>
-            <label path="startdato">startdatoen</form>
-            <input type="date" id="startdato" path="startdato"></input>
-            <label path="hvormangedager">hvor mange dager</label>
-            <input path="hvormangedager" id="hvormangedager"></input>
+            <label name="startdato" path="startdato">startdatoen</form>
+            <input name="startdato" type="date" id="startdato" path="startdato"></input>
+            <label name="hvormangedager" path="hvormangedager">hvormangedager</label>
+            <input name="hvormangedager" path="hvormangedager" id="hvormangedager"></input>
             <button type="submit">reserver</button>
         </form>
     </body>

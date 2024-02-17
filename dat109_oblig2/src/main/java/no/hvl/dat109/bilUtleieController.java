@@ -1,5 +1,6 @@
 package no.hvl.dat109;
 
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -44,26 +45,38 @@ public class bilUtleieController {
 		return "redirect:leieut";
 	}
 	@GetMapping("/leieut")
-	public String utleie(Model model ) {
-
+	public String utleie(Model model) {
+           
 		return "leieut";
+	}
+
+      @PostMapping("/leieut")
+           public String leiut(Model model,@RequestParam("hvormangedager") Integer hvormangedager,@RequestParam("startdato")Date startdato,@RequestParam("bil") String bil){
+                        model.addAttribute("hvormangedager", hvormangedager);
+						model.addAttribute("startdato", startdato);
+					
+						Bil valgtBil = bs.bilListe().stream()
+						.filter(b -> b.getKategori().equals(bil))
+						.findFirst()
+						.orElse(null);
+    
+	double  samlepris =hvormangedager*Kategori.getPris(valgtBil.getKategori());
+if (valgtBil != null) {
+model.addAttribute("kunde", kunde);
+model.addAttribute("bil", valgtBil);
+return "redirect:/kvittering";
+} else {
+model.addAttribute("feilmelding", "Det oppstod en feil under bekreftelsen av reservasjonen. Vennligst prøv igjen.");
+return "feilmelding";
+}
+	  
+    }
+
+	@GetMapping("/kvittering")
+	public String kvitteringen(){
+		return "kvittering";
 	}
 	
 
-	@PostMapping("/bekreft-reservasjon")
-    public String bekreftReservasjon(@RequestParam("bilType") String bilType, Model model) {
-        Bil valgtBil = bs.bilListe().stream()
-                                           .filter(bil -> bil.getKategori().equals(bilType))
-                                           .findFirst()
-                                           .orElse(null);
-        
-        if (valgtBil != null) {
-            model.addAttribute("kunde", kunde);
-            model.addAttribute("bil", valgtBil);
-            return "kvittering";
-        } else {
-            model.addAttribute("feilmelding", "Det oppstod en feil under bekreftelsen av reservasjonen. Vennligst prøv igjen.");
-            return "feilmelding";
-        }
-    }
+	
 }
