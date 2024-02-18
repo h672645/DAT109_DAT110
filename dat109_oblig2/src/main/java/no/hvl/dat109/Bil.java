@@ -19,6 +19,18 @@ public class Bil {
 
 	public Bil(){
 	}
+	
+	
+	
+	public Bil(String regNr, String kategori, boolean ledig) {
+		super();
+		this.regNr = regNr;
+		this.kategori = kategori;
+		this.ledig = ledig;
+	}
+
+
+
 	public Bil(String regNr,String merke,String model,String farge,String kategori,boolean ledig){
              this.regNr=regNr;
 			 this.merke=merke;

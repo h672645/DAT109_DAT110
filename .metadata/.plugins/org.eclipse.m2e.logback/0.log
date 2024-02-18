@@ -230,3 +230,311 @@ org.eclipse.core.runtime.CoreException: Launch configuration SpringMvcApplicatio
 2024-02-08 04:03:09,280 [Worker-15: Launching TestMessaging] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat110-project1-main\dat110-project1-main\src\main\resources
 2024-02-08 04:03:09,282 [Worker-15: Launching TestMessaging] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2024-02-08 04:03:09,282 [Worker-15: Launching TestMessaging] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat110-project1-main\dat110-project1-main\src\test\resources
+2024-02-18 18:31:12,415 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-02-18 18:31:42,810 [Worker-8: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: no.hvl:dat109_oblig2:0.0.1-SNAPSHOT @ C:\Users\Luna\DAT109_DAT110\dat109_oblig2\pom.xml.
+2024-02-18 18:32:18,975 [Worker-33: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 18:32:18,997 [Worker-33: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 18:32:19,002 [Worker-33: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 18:41:54,899 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 18:41:54,906 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 18:41:54,909 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 18:44:39,681 [Worker-45: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 18:44:39,688 [Worker-45: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 18:44:39,691 [Worker-45: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 18:48:51,692 [Worker-47: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 18:48:51,698 [Worker-47: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 18:48:51,700 [Worker-47: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:02:11,478 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:02:11,484 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:02:11,486 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:07:33,141 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:07:33,148 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:07:33,150 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:09:14,726 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:09:14,731 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:09:14,734 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:11:46,919 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:11:46,926 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:11:46,929 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:12:52,335 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:12:52,345 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:12:52,348 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:13:24,079 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:13:24,085 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:13:24,087 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:13:46,376 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:13:46,381 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:13:46,383 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:14:52,496 [Worker-45: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:14:52,500 [Worker-45: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:14:52,503 [Worker-45: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:15:48,123 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:15:48,127 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:15:48,130 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:16:59,151 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:16:59,159 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:16:59,161 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:17:31,666 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:17:31,672 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:17:31,675 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:18:22,631 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:18:22,635 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:18:22,638 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:19:08,867 [Worker-47: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:19:08,871 [Worker-47: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:19:08,874 [Worker-47: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:20:18,948 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:20:18,952 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:20:18,955 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:21:49,100 [Worker-53: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:21:49,107 [Worker-53: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:21:49,110 [Worker-53: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:27:39,565 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:27:39,571 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:27:39,573 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:29:33,412 [Worker-53: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:29:33,419 [Worker-53: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:29:33,423 [Worker-53: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:30:16,972 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:30:16,979 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:30:16,981 [Worker-4: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:30:33,759 [Worker-45: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:30:33,764 [Worker-45: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:30:33,767 [Worker-45: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:34:51,980 [Worker-45: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:34:51,986 [Worker-45: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:34:51,989 [Worker-45: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:35:30,650 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:35:30,656 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:35:30,658 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:37:32,746 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:37:32,752 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:37:32,755 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:38:32,591 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:38:32,595 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:38:32,597 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:39:15,746 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:39:15,752 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:39:15,754 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:46:47,954 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:46:47,960 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:46:47,962 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:47:22,127 [Worker-56: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:47:22,131 [Worker-56: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:47:22,133 [Worker-56: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:48:11,381 [Worker-56: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:48:11,385 [Worker-56: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:48:11,387 [Worker-56: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:48:31,653 [Worker-57: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:48:31,658 [Worker-57: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:48:31,660 [Worker-57: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:51:34,143 [Worker-57: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:51:34,149 [Worker-57: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:51:34,151 [Worker-57: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:53:37,448 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:53:37,452 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:53:37,454 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:54:49,386 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:54:49,390 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:54:49,392 [Worker-51: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 19:55:47,624 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:55:47,630 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 19:55:47,632 [Worker-49: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:03:55,660 [Worker-59: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:03:55,668 [Worker-59: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:03:55,672 [Worker-59: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:04:03,891 [Worker-55: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:04:03,897 [Worker-55: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:04:03,899 [Worker-55: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:04:54,466 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:04:54,471 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:04:54,473 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:07:28,312 [Worker-55: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:07:28,318 [Worker-55: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:07:28,320 [Worker-55: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:08:07,661 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:08:07,667 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:08:07,669 [Worker-52: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:12:58,790 [Worker-55: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:12:58,796 [Worker-55: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:12:58,798 [Worker-55: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:16:19,811 [Worker-65: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:16:19,816 [Worker-65: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:16:19,819 [Worker-65: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:20:44,145 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:20:44,151 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:20:44,153 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:21:53,556 [Worker-61: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:21:53,560 [Worker-61: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:21:53,563 [Worker-61: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:23:25,352 [Worker-67: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:23:25,356 [Worker-67: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:23:25,358 [Worker-67: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:28:11,661 [Worker-72: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:28:11,667 [Worker-72: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:28:11,669 [Worker-72: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:30:34,123 [Worker-65: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:30:34,129 [Worker-65: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:30:34,131 [Worker-65: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:31:24,438 [Worker-75: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:31:24,442 [Worker-75: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:31:24,444 [Worker-75: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:32:08,133 [Worker-73: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:32:08,138 [Worker-73: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:32:08,140 [Worker-73: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:33:37,947 [Worker-69: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:33:37,951 [Worker-69: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:33:37,953 [Worker-69: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:33:48,299 [Worker-65: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:33:48,304 [Worker-65: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:33:48,306 [Worker-65: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:34:20,615 [Worker-73: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:34:20,620 [Worker-73: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:34:20,622 [Worker-73: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:35:21,652 [Worker-69: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:35:21,659 [Worker-69: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:35:21,661 [Worker-69: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:47:47,637 [Worker-76: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:47:47,644 [Worker-76: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:47:47,647 [Worker-76: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:53:13,285 [Worker-81: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:53:13,292 [Worker-81: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:53:13,294 [Worker-81: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:54:13,746 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:54:13,753 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:54:13,756 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:56:24,459 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:56:24,464 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:56:24,467 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 20:59:13,874 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:59:13,896 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 20:59:13,898 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:00:05,224 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:00:05,229 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:00:05,231 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:01:34,755 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:01:34,760 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:01:34,762 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:02:35,033 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:02:35,052 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:02:35,055 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:04:49,833 [Worker-82: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:04:49,842 [Worker-82: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:04:49,845 [Worker-82: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:05:20,023 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:05:20,029 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:05:20,032 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:06:08,238 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:06:08,246 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:06:08,249 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:07:07,388 [Worker-81: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:07:07,393 [Worker-81: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:07:07,396 [Worker-81: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:09:36,102 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:09:36,109 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:09:36,111 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:10:17,692 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:10:17,697 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:10:17,700 [Worker-63: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:11:07,555 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:11:07,560 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:11:07,561 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:11:56,881 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:11:56,890 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:11:56,892 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:12:31,872 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:12:31,876 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:12:31,879 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:13:14,174 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:13:14,179 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:13:14,181 [Worker-79: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:18:55,562 [Worker-86: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:18:55,569 [Worker-86: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:18:55,572 [Worker-86: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:21:56,459 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:21:56,466 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:21:56,468 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:24:15,245 [Worker-90: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:24:15,252 [Worker-90: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:24:15,254 [Worker-90: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:25:35,861 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:25:35,868 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:25:35,870 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:26:24,025 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:26:24,030 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:26:24,032 [Worker-78: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:27:16,339 [Worker-93: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:27:16,345 [Worker-93: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:27:16,348 [Worker-93: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:28:15,132 [Worker-90: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:28:15,140 [Worker-90: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:28:15,143 [Worker-90: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:31:41,093 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:31:41,099 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:31:41,102 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:33:38,978 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:33:38,985 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:33:38,988 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:34:19,203 [Worker-95: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:34:19,210 [Worker-95: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:34:19,212 [Worker-95: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:39:17,065 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:39:17,071 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:39:17,073 [Worker-84: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:39:47,703 [Worker-99: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:39:47,707 [Worker-99: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:39:47,711 [Worker-99: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:43:12,726 [Worker-98: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:43:12,733 [Worker-98: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:43:12,736 [Worker-98: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:44:26,054 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:44:26,058 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:44:26,061 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:49:53,264 [Worker-99: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:49:53,273 [Worker-99: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:49:53,275 [Worker-99: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:52:54,692 [Worker-89: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:52:54,698 [Worker-89: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:52:54,700 [Worker-89: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 21:55:08,434 [Worker-89: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:55:08,440 [Worker-89: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 21:55:08,442 [Worker-89: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 22:11:13,684 [Worker-99: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:11:13,690 [Worker-99: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:11:13,693 [Worker-99: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 22:13:20,971 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:13:20,975 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:13:20,978 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 22:13:21,226 [Worker-102: Building Workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: no.hvl.dat110:dat110-project1-rpc-startcode:1.0-SNAPSHOT @ C:\Users\Luna\DAT109_DAT110\dat110-project1-main\dat110-project1-main\pom.xml.
+2024-02-18 22:13:21,673 [Worker-102: Building Workspace] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-02-18 22:13:21,673 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat110-project1-main\dat110-project1-main\src\main\resources
+2024-02-18 22:13:21,676 [Worker-102: Building Workspace] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-02-18 22:13:21,677 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat110-project1-main\dat110-project1-main\src\test\resources
+2024-02-18 22:13:22,127 [Worker-102: Building Workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: no.hvl.dat108:databaseEksempel:0.0.1-SNAPSHOT @ C:\Users\Luna\DAT109_DAT110\databaseEksempel\pom.xml.
+2024-02-18 22:13:22,866 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:13:22,877 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2024-02-18 22:13:22,887 [Worker-102: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\databaseEksempel\src\test\resources
+2024-02-18 22:15:21,835 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:15:21,840 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:15:21,842 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 22:17:05,237 [Worker-102: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:17:05,242 [Worker-102: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:17:05,244 [Worker-102: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 22:19:40,658 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:19:40,662 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:19:40,664 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 22:21:51,555 [Worker-103: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:21:51,561 [Worker-103: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:21:51,563 [Worker-103: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 22:22:29,098 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:22:29,104 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:22:29,106 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 22:30:42,312 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:30:42,319 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:30:42,321 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 22:35:53,318 [Worker-107: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:35:53,324 [Worker-107: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:35:53,326 [Worker-107: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
+2024-02-18 22:36:49,087 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:36:49,091 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-18 22:36:49,093 [Worker-100: Launching Dat109Oblig2Application (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Luna\DAT109_DAT110\dat109_oblig2\src\test\resources
